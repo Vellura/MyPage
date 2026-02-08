@@ -8,7 +8,7 @@
         class="badge badge-outline badge-sm gap-1 cursor-pointer hover:badge-primary transition-colors"
         @click="$emit('select', tag.name)"
       >
-        {{ tag.name }}
+        {{ tag.name.toUpperCase() }}
         <span class="text-base-content/40">{{ tag.count }}</span>
       </button>
     </div>

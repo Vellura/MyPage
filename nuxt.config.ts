@@ -20,7 +20,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: { lang: 'en' },
-      title: 'My Page',
+      title: 'Veli-Matti Ahlroth - Personal portfolio and blog',
       meta: [
         { name: 'description', content: 'Personal portfolio and blog' },
       ],

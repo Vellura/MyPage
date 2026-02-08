@@ -28,9 +28,9 @@
             <span
               v-for="tag in post.tags"
               :key="tag"
-              class="badge badge-ghost badge-sm"
+              class="badge badge-primary badge-sm"
             >
-              {{ tag }}
+              {{ tag.toUpperCase() }}
             </span>
           </div>
         </header>
