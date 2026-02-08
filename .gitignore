@@ -1,0 +1,23 @@
+# Nuxt
+.nuxt
+.output
+dist
+.data
+.nitro
+.cache
+
+# Node
+node_modules
+
+# IDE
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Misc
+.DS_Store
+*.log
