@@ -5,11 +5,16 @@
       <button
         v-for="tag in tagCounts"
         :key="tag.name"
-        class="badge badge-outline badge-sm gap-1 cursor-pointer hover:badge-primary transition-colors"
+        :class="[
+          'badge badge-sm gap-1 cursor-pointer transition-colors',
+          tag.name === activeTag
+            ? 'badge-primary'
+            : 'badge-outline hover:badge-primary',
+        ]"
         @click="$emit('select', tag.name)"
       >
         {{ tag.name.toUpperCase() }}
-        <span class="text-base-content/40">{{ tag.count }}</span>
+        <span :class="tag.name === activeTag ? 'text-primary-content/60' : 'text-base-content/40'">{{ tag.count }}</span>
       </button>
     </div>
   </div>
@@ -18,6 +23,7 @@
 <script setup lang="ts">
 const props = defineProps<{
   posts: Array<{ tags?: string[] }>
+  activeTag?: string
 }>()
 
 defineEmits<{

@@ -24,6 +24,9 @@ export default defineNuxtConfig({
       meta: [
         { name: 'description', content: 'Personal portfolio and blog' },
       ],
+      link: [
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+      ],
       script: [
         {
           innerHTML: `(function(){var t=localStorage.getItem('theme');if(t){document.documentElement.setAttribute('data-theme',t)}})()`,

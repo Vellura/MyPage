@@ -2,7 +2,7 @@
 title: "Why Your Innovations Die Before They're Born"
 date: "2026-02-11"
 description: "AI collapsed the cost of building things. The cost of getting permission didn't change. What the research says about why that gap is so destructive."
-tags: [innovation, organizations, AI]
+tags: [innovation, organizations, ai]
 image: "/images/blog/why-your-innovations-die-before-they-are-born/cover.png"
 ---
 
