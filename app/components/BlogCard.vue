@@ -1,29 +1,25 @@
 <template>
   <article class="group">
     <NuxtLink :to="post.path" class="block">
-      <img
-        v-if="post.image"
-        :src="post.image"
-        :alt="post.title"
-        class="w-full rounded-xl object-cover max-h-48 mb-4"
-      />
-      <time class="text-sm text-base-content/50 tabular-nums">
-        {{ formatDate(post.date) }}
-      </time>
-      <h3 class="text-xl lg:text-2xl font-semibold mt-1.5 group-hover:text-primary transition-colors">
-        {{ post.title }}
-      </h3>
-      <p v-if="post.description" class="mt-2 text-base-content/70 leading-relaxed">
-        {{ post.description }}
-      </p>
-      <div v-if="post.tags?.length" class="mt-3 flex gap-2 flex-wrap">
-        <span
-          v-for="tag in post.tags"
-          :key="tag"
-          class="badge badge-ghost badge-sm"
-        >
-          {{ tag }}
-        </span>
+      <div class="flex flex-col md:flex-row md:gap-4">
+        <img v-if="post.image" :src="post.image" :alt="post.title"
+          class="w-full md:w-40 md:h-40 rounded-xl object-cover flex-shrink-0" />
+        <div class="flex-1">
+          <time class="text-sm text-base-content/50 tabular-nums">
+            {{ formatDate(post.date) }}
+          </time>
+          <h3 class="text-xl lg:text-2xl font-semibold mt-1.5 group-hover:text-primary transition-colors">
+            {{ post.title }}
+          </h3>
+          <p v-if="post.description" class="mt-2 text-base-content/70 leading-relaxed">
+            {{ post.description }}
+          </p>
+          <div v-if="post.tags?.length" class="mt-3 flex gap-2 flex-wrap">
+            <span v-for="tag in post.tags" :key="tag" class="badge badge-outline badge-sm">
+              {{ tag.toUpperCase() }}
+            </span>
+          </div>
+        </div>
       </div>
     </NuxtLink>
   </article>

@@ -10,7 +10,7 @@
                     <article v-if="posts?.[0]" class="mb-16 group">
                         <NuxtLink :to="posts[0].path" class="block">
                             <img v-if="posts[0].image" :src="posts[0].image" :alt="posts[0].title"
-                                class="w-full rounded-xl object-cover max-h-64 mb-5" />
+                                class="w-full rounded-xl object-contain max-h-80 mb-5" />
                             <time class="text-sm text-base-content/50 tabular-nums">
                                 {{ formatDate(posts[0].date) }}
                             </time>
