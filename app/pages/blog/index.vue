@@ -9,7 +9,7 @@
                     <article v-if="featuredPost && !isFiltering" class="mb-16 group">
                         <NuxtLink :to="featuredPost.path" class="block">
                             <img v-if="featuredPost.image" :src="featuredPost.image" :alt="featuredPost.title"
-                                class="w-full rounded-xl object-contain max-h-80 mb-5" />
+                                class="w-full rounded-xl object-contain mb-5" />
                             <time class="text-sm text-base-content/50 tabular-nums">
                                 {{ formatDate(featuredPost.date) }}
                             </time>
