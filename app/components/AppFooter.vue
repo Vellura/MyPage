@@ -1,7 +1,7 @@
 <template>
   <footer class="px-6 lg:px-8 py-12 mt-auto">
     <div class="max-w-5xl mx-auto flex items-center justify-between text-sm text-base-content/50">
-      <span>© {{ new Date().getFullYear() }} Velimatti Ahlroth</span>
+      <span>© {{ new Date().getFullYear() }} Veli-Matti Ahlroth</span>
       <a
         href="https://www.linkedin.com/in/velimattiahlroth/"
         target="_blank"
