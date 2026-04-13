@@ -1,0 +1,384 @@
+title: "AI Landscape: Signal vs Noise (Spring 2026)"
+description: Mapping recent AI research, announcements, reports, and analysis by topic and sentiment. A point-in-time view of where the discourse stands as of April 2026 — designed to connect back to deeper research in the topic maps.
+date: "2026-04-12"
+
+columns:
+  - id: bullish_optimistic
+    label: Bullish / optimistic
+  - id: measured_nuanced
+    label: Measured / nuanced
+  - id: skeptical_bearish
+    label: Skeptical / bearish
+
+rows:
+  - id: productivity_roi
+    label: "Productivity & ROI"
+  - id: models_capability
+    label: "Models & capability"
+  - id: workforce_labor
+    label: "Workforce & labor"
+  - id: hype_cycle_position
+    label: Hype cycle position
+  - id: infrastructure_energy
+    label: "Infrastructure & energy"
+
+tags:
+  report:
+    label: report
+    color: "#14b8a6"
+  announcement:
+    label: announcement
+    color: "#3b82f6"
+  research:
+    label: research
+    color: "#8b5cf6"
+  analysis:
+    label: analysis
+    color: "#f97316"
+  workforce:
+    label: workforce
+    color: "#ef4444"
+
+cards:
+  - title: "NVIDIA: 86% increasing AI budgets, 64% actively using AI"
+    row: productivity_roi
+    column: bullish_optimistic
+    tag: report
+    description: >
+      State of AI 2026: Financial services, retail, healthcare show strongest ROI. 42% prioritising workflow optimisation. 44% deploying or assessing agentic AI.
+    url: "https://blogs.nvidia.com/blog/state-of-ai-report-2026/"
+
+  - title: "Morgan Stanley: AI breakthrough imminent in H1 2026"
+    row: productivity_roi
+    column: bullish_optimistic
+    tag: announcement
+    description: >
+      Warns transformative leap driven by unprecedented compute accumulation. Predicts AI as powerful deflationary force.
+    url: "https://fortune.com/2026/03/13/elon-musk-morgan-stanley-ai-leap-2026/"
+
+  - title: "LPL: US productivity growth ~2.7%, nearly double decade average"
+    row: productivity_roi
+    column: bullish_optimistic
+    tag: report
+    description: >
+      AI-driven gains expected in healthcare and admin services. J-curve pattern: initial adoption slows productivity before stronger long-run gains.
+    url: "https://www.lpl.com/research/weekly-market-commentary/the-productivity-advantage-powering-economic-growth-in-2026.html"
+
+  - title: "NBER/Fed: productivity paradox — perceived gains exceed measured gains"
+    row: productivity_roi
+    column: measured_nuanced
+    tag: research
+    description: >
+      Survey of 750 CFOs. Productivity gains positive but perceived gains substantially larger than revenue-based gains. Benefits concentrated in high-skill services and finance.
+    url: "https://www.nber.org/papers/w34984"
+
+  - title: AI triples productivity on ~1/3 of tasks only
+    row: productivity_roi
+    column: measured_nuanced
+    tag: research
+    description: >
+      Outsized gains in drafting, research, data analysis, coding. Minimal value for judgment, relationships, physical coordination.
+    url: "https://autofaceless.ai/blog/ai-productivity-statistics-2026"
+
+  - title: "Alex Imas: J-curve — aggregate data starting to show AI gains"
+    row: productivity_roi
+    column: measured_nuanced
+    tag: analysis
+    description: >
+      Living productivity tracker updated Mar 2026. Only 5.7% of US work hours involve genAI. Power users compress weeks into hours; most use AI for narrow tasks.
+    url: "https://aleximas.substack.com/p/what-is-the-impact-of-ai-on-productivity"
+
+  - title: LLM access helps under time pressure, harms when time is sufficient
+    row: productivity_roi
+    column: measured_nuanced
+    tag: research
+    description: >
+      Temporal reversal: early/continuous LLM access improves performance under time pressure but can impair it when time is sufficient. Workflow design is a first-class variable.
+    url: "https://arxiv.org/abs/2603.08849"
+
+  - title: "TurboQuant: massive compression for cheaper inference"
+    row: productivity_roi
+    column: measured_nuanced
+    tag: research
+    description: >
+      Google Research quantization targeting memory overhead. Cheaper inference enables wider deployment.
+    url: "https://research.google/blog/turboquant-extreme-compression-for-efficient-ai/"
+
+  - title: "OpenAI policy blueprint: 32-hour week pilots, public wealth fund"
+    row: productivity_roi
+    column: measured_nuanced
+    tag: report
+    description: >
+      Proposes public wealth fund, grid expansion, evolving tax base, four-day work week pilots. Labs treating macro-economics as part of the AI product.
+    url: "https://cdn.openai.com/papers/industrial-policy-for-the-intelligence-age.pdf"
+
+  - title: "Yale Budget Lab: productivity data too noisy to confirm boom"
+    row: productivity_roi
+    column: skeptical_bearish
+    tag: research
+    description: >
+      Cautions against reading too much into data. Compositional effects, capital utilisation, and normal noise may explain numbers rather than AI directly.
+    url: "https://budgetlab.yale.edu/research/ai-productivity-boom-dont-count-your-productivity-data-chickens"
+
+  - title: "HBR: AI intensifies work, doesn't reduce it"
+    row: productivity_roi
+    column: skeptical_bearish
+    tag: research
+    description: >
+      UC Berkeley study: workers with AI work faster, take on broader scope, extend hours — often without being asked. Speed gains absorbed by expanded workload.
+    url: "https://hbr.org/2026/02/ai-doesnt-reduce-work-it-intensifies-it"
+
+  - title: "80% of firms see no bottom-line impact despite 91% adoption"
+    row: productivity_roi
+    column: skeptical_bearish
+    tag: report
+    description: >
+      Workers save 5.4% of weekly hours and report 40% productivity boosts — yet 80% of firms see no bottom-line impact. Worker confidence fell 18%.
+    url: "https://autofaceless.ai/blog/ai-productivity-statistics-2026"
+
+  - title: "GPT-5.4: expert-level performance on professional tasks"
+    row: models_capability
+    column: bullish_optimistic
+    tag: announcement
+    description: >
+      Scored 83% on GDPVal — at or above human expert level on economically valuable professional tasks. Standard, Thinking, and Pro variants.
+    url: "https://openai.com/index/introducing-gpt-5-4/"
+
+  - title: "Gemini 3.1 Ultra + Flash-Lite: multimodal + ultra-cheap"
+    row: models_capability
+    column: bullish_optimistic
+    tag: announcement
+    description: >
+      Ultra with native multimodal reasoning. Flash-Lite: 2.5x faster at $0.25/M input tokens. Efficiency race intensifying.
+    url: "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-march-2026/"
+
+  - title: "Google Gemma 4: open-source reasoning models"
+    row: models_capability
+    column: bullish_optimistic
+    tag: announcement
+    description: >
+      Open-source under Apache 2.0. 400M+ downloads, 100K+ community variants. On-premise use without frontier API costs.
+    url: "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-march-2026/"
+
+  - title: "Microsoft Agent Framework 1.0: production-ready orchestration"
+    row: models_capability
+    column: bullish_optimistic
+    tag: announcement
+    description: >
+      Stable APIs, multi-provider support, cross-runtime interop (A2A, MCP). Standardized orchestration raises baseline engineering quality.
+    url: "https://devblogs.microsoft.com/semantic-kernel/microsoft-agent-framework-1-0/"
+
+  - title: "MCP 97M installs: the real breakthrough is plumbing, not models"
+    row: models_capability
+    column: measured_nuanced
+    tag: analysis
+    description: >
+      Every major AI provider ships MCP-compatible tooling. Agentic AI Foundation formed under Linux Foundation with Anthropic, OpenAI, Block.
+    url: "https://www.digitalapplied.com/blog/march-2026-ai-roundup-month-that-changed-everything"
+
+  - title: "GTC 2026: agents moving from demo to production"
+    row: models_capability
+    column: measured_nuanced
+    tag: announcement
+    description: >
+      Dominated by enterprise agentic deployments, not benchmarks. NeMoCLAW and OpenCLAW drew largest attendance. Fortune 500 production deployments.
+    url: "https://blogs.nvidia.com/blog/state-of-ai-report-2026/"
+
+  - title: "Microsoft Researcher: multi-model critique and council patterns"
+    row: models_capability
+    column: measured_nuanced
+    tag: announcement
+    description: >
+      Critique loops and consensus mechanisms. Reliability from architectural patterns, not just scaling. Shift from one-model-answers to systems-of-models.
+    url: "https://techcommunity.microsoft.com/blog/microsoft365copilotblog/microsoft-365-copilot-deep-research-multi-model-intelligence/"
+
+  - title: "AgentProcessBench + AgentHazard: step-level safety evaluation"
+    row: models_capability
+    column: measured_nuanced
+    tag: research
+    description: >
+      Benchmarks targeting gap between demos and production. Evaluates intermediate steps and whether agents recognise harmful outcome composition.
+    url: "https://arxiv.org/abs/2503.12065"
+
+  - title: "OpenAI kills Sora: inference costs unsustainable"
+    row: models_capability
+    column: skeptical_bearish
+    tag: announcement
+    description: >
+      Discontinued 6 months after launch. Unsustainable inference costs. Reveals economic reality of compute-heavy media generation.
+    url: "https://www.digitalapplied.com/blog/march-2026-ai-roundup-month-that-changed-everything"
+
+  - title: "Hackaday: excitement misplaced on wrong part of curve"
+    row: models_capability
+    column: skeptical_bearish
+    tag: analysis
+    description: >
+      Current excitement mirrors previous hype cycles. Real value will emerge on the right side of the Gartner curve. Cites dotcom parallel.
+    url: "https://hackaday.com/2026/04/08/ai-for-the-skeptics-pick-your-reasons-to-be-excited/"
+
+  - title: "OpenAI + IBM: expanding workforce, not shrinking"
+    row: workforce_labor
+    column: bullish_optimistic
+    tag: announcement
+    description: >
+      OpenAI expanding headcount for enterprise pivot. IBM tripled entry-level hiring, saying human oversight remains essential.
+    url: "https://www.techspot.com/news/112006-tech-layoffs-hit-80000-early-2026-ai-blamed.html"
+
+  - title: "NBER: CFOs expect 502K AI job losses — 9x rise but 0.4% of total"
+    row: workforce_labor
+    column: measured_nuanced
+    tag: research
+    description: >
+      750 CFOs: 44% plan AI cuts. ~0.4% of workforce (502K roles). 9x from 2025's 55K but still small. Small firms may increase hiring.
+    url: "https://fortune.com/2026/03/24/cfo-survey-ai-job-cuts-productivity-paradox-2026/"
+
+  - title: "Oxford Economics: 'AI washing' — layoffs are corporate fiction"
+    row: workforce_labor
+    column: measured_nuanced
+    tag: analysis
+    description: >
+      Firms using AI as cover for routine headcount reductions. If machines replaced humans at scale, output per worker should skyrocket.
+    url: "https://fortune.com/2026/01/07/ai-layoffs-convenient-corporate-fiction-true-false-oxford-economics-productivity/"
+
+  - title: "Mercer: worker anxiety surging, 28% → 40%"
+    row: workforce_labor
+    column: measured_nuanced
+    tag: report
+    description: >
+      Employee concerns rose from 28% (2024) to 40% (2026). 62% feel leaders underestimate AI's emotional impact.
+    url: "https://www.cnbc.com/2026/01/20/ai-impacting-labor-market-like-a-tsunami-as-layoff-fears-mount.html"
+
+  - title: "Anthropic: 'observed exposure' — real usage lags theoretical capability"
+    row: workforce_labor
+    column: measured_nuanced
+    tag: research
+    description: >
+      Observed exposure combines capability and real usage. Limited employment effects so far, but hiring slowdowns for younger workers in exposed occupations.
+    url: "https://www.anthropic.com/research/the-anthropic-economic-index"
+
+  - title: ~80K tech jobs cut in Q1, half blamed on AI
+    row: workforce_labor
+    column: skeptical_bearish
+    tag: workforce
+    description: >
+      78,557 layoffs Jan-Apr 2026. 47.9% attributed to AI. 76.7% US-based. Block 40%, Atlassian 10%, Oracle ~10K.
+    url: "https://www.techspot.com/news/112006-tech-layoffs-hit-80000-early-2026-ai-blamed.html"
+
+  - title: "Block cuts 40%: largest AI-attributed layoff in history"
+    row: workforce_labor
+    column: skeptical_bearish
+    tag: workforce
+    description: >
+      Dorsey: 'Not financial difficulty, but growing AI capability.' 10K → under 6K. But Block had doubled headcount during pandemic.
+    url: "https://tech-insider.org/tech-layoffs-2026-ai-workforce-impact/"
+
+  - title: "HBR: layoffs based on AI potential, not proven performance"
+    row: workforce_labor
+    column: skeptical_bearish
+    tag: analysis
+    description: >
+      Companies cutting based on what AI might do, not what it demonstrably does. Anticipatory, not evidence-based.
+    url: "https://hbr.org/2026/01/companies-are-laying-off-workers-because-of-ais-potential-not-its-performance"
+
+  - title: "Motley Fool: real revenue, not just hype — $25B+ annualized"
+    row: hype_cycle_position
+    column: bullish_optimistic
+    tag: report
+    description: >
+      OpenAI $25B annualized. Anthropic approaching $19B. Real commercial traction regardless of broader productivity debate.
+    url: "https://www.fool.com/investing/2026/03/30/was-ai-just-the-biggest-hype-cycle/"
+
+  - title: "Meta Muse Spark: 'personal superintelligence' framing"
+    row: hype_cycle_position
+    column: bullish_optimistic
+    tag: announcement
+    description: >
+      Instant/Thinking modes, parallel subagents. Framed as 'personal superintelligence.' High distribution, limited public technical disclosure.
+    url: "https://about.fb.com/news/2026/04/muse-spark/"
+
+  - title: "Gartner: GenAI entering trough of disillusionment"
+    row: hype_cycle_position
+    column: measured_nuanced
+    tag: analysis
+    description: >
+      GenAI past peak hype. AI Engineering rising. Knowledge Graphs comeback to combat hallucinations.
+    url: "https://www.pragmaticcoders.com/blog/gartner-ai-hype-cycle"
+
+  - title: "Itential: AI hype rhyming with early cloud adoption"
+    row: hype_cycle_position
+    column: measured_nuanced
+    tag: analysis
+    description: >
+      Ambitious timelines, glossed-over complexity. Durable value in the 'messy middle' — governed, deterministic execution.
+    url: "https://www.itential.com/blog/company/ai-networking/ai-cloud-hype-cycle-infrastructure"
+
+  - title: "Meta-pattern: two coupled hype cycles, not one"
+    row: hype_cycle_position
+    column: measured_nuanced
+    tag: analysis
+    description: >
+      Hype calibration is two coupled cycles: capabilities/productization and measurement/governance/safety. The second is underhyped relative to importance.
+
+  - title: "Good Strategy: era of 'show the numbers'"
+    row: hype_cycle_position
+    column: skeptical_bearish
+    tag: analysis
+    description: >
+      Agentic systems remain brittle, hallucinate, need constant supervision. Mood shifting to demanding demonstrable results.
+    url: "https://goodstrat.com/2026/01/21/the-truth-behind-ai-hype-in-2026/"
+
+  - title: "Jim Chanos: fraud cycle follows the boom"
+    row: hype_cycle_position
+    column: skeptical_bearish
+    tag: analysis
+    description: >
+      Famous short seller warns of narrative-driven excess. Fraud cycle follows financial cycle with a lag.
+    url: "https://acquirersmultiple.com/2026/03/jim-chanos-warns-investors-to-be-wary-of-ai-hype-and-late-cycle-risks/"
+
+  - title: "Glance CX: faster bots, declining trust — the CX reckoning"
+    row: hype_cycle_position
+    column: skeptical_bearish
+    tag: report
+    description: >
+      600 US consumers: AI improved speed but 34% say support got harder. 2026 is 'year of reckoning.'
+    url: "https://www.glance.cx/blog/from-ai-hype-to-cx-reckoning"
+
+  - title: "DeepMind: harmful manipulation toolkit — models can shift beliefs"
+    row: hype_cycle_position
+    column: skeptical_bearish
+    tag: research
+    description: >
+      10,000+ participants. Models induce belief/behaviour changes; efficacy varies by domain. Both grounded and alarming.
+    url: "https://deepmind.google/discover/blog/a-new-approach-to-red-teaming-for-harmful-manipulation/"
+
+  - title: "Anthropic Glasswing: cyber exploit discovery in minutes, not months"
+    row: hype_cycle_position
+    column: skeptical_bearish
+    tag: announcement
+    description: >
+      Claude Mythos Preview finds thousands of high-severity vulnerabilities. Defensive intent, but classic dual-use accelerator.
+    url: "https://www.anthropic.com/research/project-glasswing"
+
+  - title: "NVIDIA robotics: Isaac GR00T + Newton 1.0 stack"
+    row: infrastructure_energy
+    column: bullish_optimistic
+    tag: announcement
+    description: >
+      Open models for natural language robot control. Isaac Sim 6.0, Newton 1.0. But real deployments still years away.
+    url: "https://blogs.nvidia.com/blog/national-robotics-week-2026/"
+
+  - title: "DDN: 65% say complexity blocks AI ROI"
+    row: infrastructure_energy
+    column: measured_nuanced
+    tag: report
+    description: >
+      65% cite overly complex environments as barrier to ROI. 54% delayed or cancelled initiatives. The infrastructure problem nobody talks about.
+    url: "https://www.ddn.com/press-releases/ddn-supermicro-and-nvidia-launch-driving-ai-breakthroughs-experience-at-gtc-2026/"
+
+  - title: AI energy demands creating infrastructure crisis
+    row: infrastructure_energy
+    column: skeptical_bearish
+    tag: analysis
+    description: >
+      GPUs demand power CPUs never did. Trump's ratepayer protection pledge. Environmental cost vs geopolitical AI race.
+    url: "https://medium.com/the-investors-handbook/the-ai-hype-cycle-faces-its-biggest-test-a-shift-you-cant-ignore-8d2c15991e01"
